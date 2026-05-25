@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ALORNIX - Creative Portfolio Template" />
+    <title>DevKemal | StoreFront</title>
+
+    <link rel="preload" as="style" href="../assets/app-uK8OZ6JZ.css" />
+    <link rel="stylesheet" href="../assets/app-uK8OZ6JZ.css" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body class="bg-[#F2F2F2] text-black relative">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 p-6 md:p-8 backdrop-blur-lg bg-[#F2F2F2]/50 text-black transition-colors duration-300"
+    >
+      <div class="flex justify-between items-center relative z-50">
+        <a
+          href="/en"
+          class="display-font text-2xl font-bold tracking-tighter hover:opacity-70 transition"
+          id="logo"
+          >DEVKEMAL</a
+        >
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden flex flex-col gap-1.5 z-50"
+          onclick="toggleMenu()"
+          id="menu_burger"
+        >
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex text-sm font-medium tracking-wide text-black"
+        >
+          <a href="/tr/project/storefront" class="nav-link"> TÜRKÇE </a>
+          <a href="/en" class="nav-link"> My Work </a>
+          <a href="/en/about" class="nav-link"> Me </a>
+          <a href="mailto:devkemal.contact@gmail.com" class="nav-link">
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed h-screen w-screen inset-0 bg-black text-white flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-500 ease-in-out md:hidden z-40"
+      >
+        <a
+          href="/en"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          My Work
+        </a>
+        <a
+          href="/en/about"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Me
+        </a>
+        <a
+          href="mailto:devkemal.contact@gmail.com"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Contact
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Project -->
+    <div class="w-full h-[70vh] bg-black relative mb-20">
+      <img
+        src="../storage/projects/NJzmw0ThlDzPZFn6LrEjZhxwnJZx5W5XyGUzLOrq.png"
+        class="w-full h-full object-cover blur opacity-80"
+      />
+      <div class="absolute bottom-10 left-4 md:left-10 text-white">
+        <h1 class="display-font text-5xl md:text-8xl font-bold mb-4">
+          StoreFront
+        </h1>
+        <div class="w-full flex items-center gap-4">
+          <small
+            class="text-white p-2 font-semibold uppercase tracking-wide"
+            style="background-color: #004040"
+            >Fullstack</small
+          >
+          <p class="text-sm uppercase tracking-widest opacity-70">
+            PHP • Laravel • TailwindCSS • Javascript
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="w-11/12 lg:w-9/12 mx-auto px-4 pb-20">
+      <h3 class="display-font text-4xl font-bold mb-6 lg:mb-10">
+        Project summary
+      </h3>
+      <div class="pb-8 text-lg">
+        Inventory management and employee performance tracking software for
+        physical stores.
+      </div>
+      <h3 class="display-font text-4xl font-bold mb-6 lg:mb-10">
+        Project details
+      </h3>
+
+      <div class="min-w-full prose">
+        <h2>Features</h2>
+        <ol>
+          <li>
+            <strong>Real-Time Inventory Tracking</strong>: Monitor your stock
+            levels in real time and receive automatic notifications for products
+            falling to critical levels.
+          </li>
+          <li>
+            <strong>Employee Performance Analysis</strong>: Measure employee
+            productivity with detailed reports based on sales targets, customer
+            interaction, and working hours.
+          </li>
+          <li>
+            <strong>Fast Stock Entry and Barcode Support</strong>: Add new
+            products to the system in seconds and reduce the margin of error to
+            zero by digitizing physical counting processes.
+          </li>
+          <li>
+            <strong>In-Store Task Management</strong>: Assign daily or weekly
+            tasks to your employees and remotely monitor the completion status
+            of operational processes.
+          </li>
+          <li>
+            <strong>Advanced Sales Reporting</strong>: Analyze best-selling
+            products and peak hours to make strategic decisions that will
+            increase your turnover.
+          </li>
+          <li>
+            <strong>Cloud-Based Access</strong>: Securely access all inventory
+            and personnel data from any device, even when you're not in the
+            store.
+          </li>
+        </ol>
+      </div>
+
+      <div class="space-y-8 mt-8">
+        <img
+          src="../storage/project/images/5zCX2zWAgpzHyuOktBV9j4S1tv41bdn7vWhlWMkQ.jpg"
+          class="w-full h-auto"
+        />
+      </div>
+    </section>
+
+    <!-- Next Project -->
+    <section
+      class="border-t border-neutral-300 py-20 bg-black text-white text-center hover-trigger cursor-pointer"
+      onclick="window.location.href = '/en/project/kalmio'"
+    >
+      <p class="text-sm uppercase tracking-widest mb-4 opacity-70">
+        Next Project
+      </p>
+      <h2
+        class="display-font text-6xl md:text-8xl font-bold hover:text-neutral-400 transition uppercase"
+      >
+        Kalmio
+      </h2>
+    </section>
+
+    <footer class="py-20 border-t border-gray-300">
+      <div class="container mx-auto px-4 text-center">
+        <a
+          href="mailto:devkemal.contact@gmail.com"
+          class="display-font uppercase block text-6xl md:text-8xl font-bold mb-12 hover:text-gray-500 transition cursor-pointer"
+        >
+          Contact
+        </a>
+
+        <div
+          class="flex justify-center gap-12 text-sm uppercase tracking-widest font-bold"
+        >
+          <a
+            href="https://github.com/devKemal"
+            target="_blank"
+            class="hover:line-through"
+            >Github</a
+          ><a
+            href="https://www.behance.net/kemalozvarol"
+            target="_blank"
+            class="hover:line-through"
+            >Behance</a
+          >
+          <a href="mailto:devkemal.contact@gmail.com" class="hover:line-through"
+            >Email</a
+          >
+        </div>
+
+        <div class="mt-20 text-xs text-gray-500 font-medium">
+          &copy; 2026 Alornix Canvas.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("-translate-y-full");
+        window.logo.classList.toggle("text-white");
+        window.menu_burger.classList.toggle("text-white");
+      }
+      console.log(navigator.language);
+
+      // if (window.location.pathname === '/') {
+      //     const lang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+      //     window.location.href = '/' + lang + '/';
+      // }
+    </script>
+  </body>
+</html>

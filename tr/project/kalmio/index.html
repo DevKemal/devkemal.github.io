@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ALORNIX - Creative Portfolio Template" />
+    <title>DevKemal | Kalmio</title>
+
+    <link rel="preload" as="style" href="../assets/app-uK8OZ6JZ.css" />
+    <link rel="stylesheet" href="../assets/app-uK8OZ6JZ.css" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body class="bg-[#F2F2F2] text-black relative">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 p-6 md:p-8 backdrop-blur-lg bg-[#F2F2F2]/50 text-black transition-colors duration-300"
+    >
+      <div class="flex justify-between items-center relative z-50">
+        <a
+          href="/tr"
+          class="display-font text-2xl font-bold tracking-tighter hover:opacity-70 transition"
+          id="logo"
+          >DEVKEMAL</a
+        >
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden flex flex-col gap-1.5 z-50"
+          onclick="toggleMenu()"
+          id="menu_burger"
+        >
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex text-sm font-medium tracking-wide text-black"
+        >
+          <a href="/en/project/kalmio" class="nav-link"> ENGLISH </a>
+          <a href="/tr" class="nav-link"> Yaptıklarım </a>
+          <a href="/tr/about" class="nav-link"> Ben </a>
+          <a href="/tr/contact" class="nav-link"> İletişim </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed h-screen w-screen inset-0 bg-black text-white flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-500 ease-in-out md:hidden z-40"
+      >
+        <a
+          href="/tr"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Yaptıklarım
+        </a>
+        <a
+          href="/tr/about"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Ben
+        </a>
+        <a
+          href="/tr/contact"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          İletişim
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Project -->
+    <div class="w-full h-[70vh] bg-black relative mb-20">
+      <img
+        src="../storage/projects/kwew9KYvyuY4rgChC8FCJrSiyb9Yw6kr8PFMIbu5.png"
+        class="w-full h-full object-cover blur opacity-80"
+      />
+      <div class="absolute bottom-10 left-4 md:left-10 text-white">
+        <h1 class="display-font text-5xl md:text-8xl font-bold mb-4">Kalmio</h1>
+        <div class="w-full flex items-center gap-4">
+          <small
+            class="text-white p-2 font-semibold uppercase tracking-wide"
+            style="background-color: #ff8000"
+            >Fullstack</small
+          >
+          <p class="text-sm uppercase tracking-widest opacity-70">
+            PHP • Laravel • TailwindCSS • Javascript
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="w-11/12 lg:w-9/12 mx-auto px-4 pb-20">
+      <h3 class="display-font text-4xl font-bold mb-6 lg:mb-10">Proje Özeti</h3>
+      <div class="pb-8 text-lg">
+        Ziyaretçilerin yemekleri ve restoranları, kategori ve mesafeye göre
+        sıralayıp online olarak satın alabilecekleri bir sistem.
+      </div>
+      <h3 class="display-font text-4xl font-bold mb-6 lg:mb-10">
+        Proje Detayları
+      </h3>
+
+      <div class="min-w-full prose">
+        <h2>Özellikler</h2>
+        <ol>
+          <li>Konum ve kategori tabanlı restoran sıralama</li>
+          <li>
+            Online ödeme ile satın alım veya gel-al kodu oluşturma seçeneği
+          </li>
+          <li>Otomatik ilan ekleme/silme</li>
+          <li>Restoran/yemeği favorilere ekleme</li>
+          <li>Restoran yemek ve hizmet puanlama</li>
+          <li>Responsive (mobil uyumlu) tasarım</li>
+          <li>Açık/Koyu mod desteği</li>
+        </ol>
+      </div>
+
+      <div class="space-y-8 mt-8">
+        <img
+          src="../storage/project/images/OeVnkUgRXqIwyvwd8yct3BAyiyXkhUmhytdWU7aC.jpg"
+          class="w-full h-auto"
+        />
+        <img
+          src="../storage/project/images/UcO2csCE5jQOQoWZpXjyKwVUlmweln9Kqb20YCKd.jpg"
+          class="w-full h-auto"
+        />
+        <img
+          src="../storage/project/images/5h3bAMaB8oHutdcBDNHrX76R7Q2A1sGsLIMmUd6i.jpg"
+          class="w-full h-auto"
+        />
+        <img
+          src="../storage/project/images/5lTo8bO4Gt9zFHcnnCrhNx6vaBjg4Bdvzl8STdQC.jpg"
+          class="w-full h-auto"
+        />
+      </div>
+    </section>
+
+    <!-- Next Project -->
+    <section
+      class="border-t border-neutral-300 py-20 bg-black text-white text-center hover-trigger cursor-pointer"
+      onclick="window.location.href = '/tr/project/vardiyaio'"
+    >
+      <p class="text-sm uppercase tracking-widest mb-4 opacity-70">
+        Sonraki proje
+      </p>
+      <h2
+        class="display-font text-6xl md:text-8xl font-bold hover:text-neutral-400 transition uppercase"
+      >
+        Vardiya.io
+      </h2>
+    </section>
+
+    <footer class="py-20 border-t border-gray-300">
+      <div class="container mx-auto px-4 text-center">
+        <a
+          href="/tr/contact"
+          class="display-font uppercase block text-6xl md:text-8xl font-bold mb-12 hover:text-gray-500 transition cursor-pointer"
+        >
+          İletişim
+        </a>
+
+        <div
+          class="flex justify-center gap-12 text-sm uppercase tracking-widest font-bold"
+        >
+          <a
+            href="https://github.com/devKemal"
+            target="_blank"
+            class="hover:line-through"
+            >Github</a
+          ><a
+            href="https://www.behance.net/kemalozvarol"
+            target="_blank"
+            class="hover:line-through"
+            >Behance</a
+          >
+          <a href="mailto:devkemal.contact@gmail.com" class="hover:line-through"
+            >Email</a
+          >
+        </div>
+
+        <div class="mt-20 text-xs text-gray-500 font-medium">
+          &copy; 2026 Alornix Canvas.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("-translate-y-full");
+        window.logo.classList.toggle("text-white");
+        window.menu_burger.classList.toggle("text-white");
+      }
+      console.log(navigator.language);
+
+      // if (window.location.pathname === '/') {
+      //     const lang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+      //     window.location.href = '/' + lang + '/';
+      // }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ALORNIX - Creative Portfolio Template" />
+    <title>DevKemal | Fullstack Web Developer Portfolyo</title>
+
+    <link rel="preload" as="style" href="../assets/app-uK8OZ6JZ.css" />
+    <link rel="stylesheet" href="../assets/app-uK8OZ6JZ.css" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.2"></script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body class="bg-[#F2F2F2] text-black relative">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full z-50 p-6 md:p-8 backdrop-blur-lg bg-[#F2F2F2]/50 text-black transition-colors duration-300"
+    >
+      <div class="flex justify-between items-center relative z-50">
+        <a
+          href="/tr"
+          class="display-font text-2xl font-bold tracking-tighter hover:opacity-70 transition"
+          id="logo"
+          >DEVKEMAL</a
+        >
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden flex flex-col gap-1.5 z-50"
+          onclick="toggleMenu()"
+          id="menu_burger"
+        >
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+          <span class="w-8 h-0.5 bg-current"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex text-sm font-medium tracking-wide text-black"
+        >
+          <a href="/en" class="nav-link"> ENGLISH </a>
+          <a href="/tr" class="nav-link"> Yaptıklarım </a>
+          <a href="/tr/about" class="nav-link"> Ben </a>
+          <a href="/tr/contact" class="nav-link"> İletişim </a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed h-screen w-screen inset-0 bg-black text-white flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-500 ease-in-out md:hidden z-40"
+      >
+        <a
+          href="/tr"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Yaptıklarım
+        </a>
+        <a
+          href="/tr/about"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          Ben
+        </a>
+        <a
+          href="/tr/contact"
+          class="display-font text-4xl font-bold hover:text-gray-300 transition uppercase tracking-wide"
+          onclick="toggleMenu()"
+        >
+          İletişim
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="h-screen flex items-center justify-center p-4">
+      <div class="flex items-center justify-center flex-col text-center">
+        <h1
+          class="display-font uppercase md:ps-12 lg:ps-0 group text-7xl md:text-9xl font-bold leading-[0.85] tracking-tight mb-8"
+        >
+          WEB <br />
+          <span
+            class="text-transparent stroke-text"
+            style="-webkit-text-stroke: 2px black"
+          >
+            tasarım
+          </span>
+          <br />
+          <div class="relative">
+            <span
+              class="bg-black p-4 py-0 md:py-4 h-max md:my-0 md:absolute md:right-[94%] md:bottom-1/2 md:translate-y-1/2 -rotate-12 text-white z-10 shadow-xl rounded-xl transition-all"
+              >&</span
+            >
+            yazılım
+          </div>
+        </h1>
+        <p class="max-w-md mx-auto text-gray-500 font-medium leading-relaxed">
+          15 Yıllık web yazılımları geliştirme tecrübemle, profesyonel tasarım
+          ve yazılım hizmeti sunuyorum
+        </p>
+      </div>
+      <a
+        href="#services"
+        class="absolute bottom-10 left-10 animate-bounce z-50"
+      >
+        <i class="ph ph-arrow-up text-2xl text-black"></i>
+      </a>
+    </section>
+
+    <section class="text-neutral-600 body-font py-16" id="services">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col">
+          <div class="h-1 bg-neutral-200 rounded overflow-hidden">
+            <div class="w-24 h-full bg-neutral-500"></div>
+          </div>
+          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+            <h1
+              class="sm:w-2/5 text-neutral-900 font-medium title-font text-2xl lg:text-5xl mb-2 sm:mb-0"
+            >
+              Sunduğum hizmetler
+            </h1>
+            <p
+              class="sm:w-3/5 leading-relaxed text-end text-base lg:w-1/2 lg:ms-auto lg:text-xl sm:pl-10 pl-0"
+            >
+              15 Yıllık web yazılımları geliştirme tecrübemle, profesyonel
+              tasarım ve yazılım hizmeti sunuyorum
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div
+            class="p-4 lg:w-1/2 xl:w-1/3 sm:mb-0 mb-6 hover:bg-white transition-all"
+          >
+            <img
+              alt="content"
+              class="min-h-44 h-auto w-full border-4 border-black"
+              src="../storage/images/ser1.png"
+            />
+            <div class="flex-1 ps-2">
+              <h2 class="text-xl font-medium title-font text-neutral-900 mt-4">
+                Web Yazılımları
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                Kullanıcı odaklı, yüksek performanslı ve modern web uygulamaları
+                geliştirerek fikirlerinizi dijital dünyada yaşayan projelere
+                dönüştürüyorum.
+              </p>
+            </div>
+            <a class="services-link" href="#portfolio">
+              Detaylar ve Örnekler
+              <i class="ph ph-arrow-right text-xl ps-2 pb-0.5"></i>
+            </a>
+          </div>
+          <div
+            class="p-4 lg:w-1/2 xl:w-1/3 sm:mb-0 mb-6 hover:bg-white transition-all"
+          >
+            <img
+              alt="content"
+              class="min-h-44 w-full border-4 border-black"
+              src="../storage/images/ser2.png"
+            />
+            <h2 class="text-xl font-medium title-font text-neutral-900 mt-4">
+              Web Tasarım
+            </h2>
+            <div class="flex-1 ps-2">
+              <p class="text-base leading-relaxed mt-2">
+                HTML, CSS ve Javascript dillerini en iyi şekilde kullanarak
+                hayalinizdeki tasarımı müşterilerinize göstermenize yardımcı
+                olurum.
+              </p>
+            </div>
+            <a class="services-link" href="#portfolio">
+              Detaylar ve Örnekler
+              <i class="ph ph-arrow-right text-xl ps-2 pb-0.5"></i>
+            </a>
+          </div>
+          <div class="p-4 xl:w-1/3 sm:mb-0 mb-6 hover:bg-white transition-all">
+            <img
+              alt="content"
+              class="min-h-44 w-full border-4 border-black"
+              src="../storage/images/ser3.png"
+            />
+
+            <div class="flex-1 ps-2">
+              <h2 class="text-xl font-medium title-font text-neutral-900 mt-4">
+                Şirketler için web siteleri ve yazılımları
+              </h2>
+              <p class="text-base leading-relaxed mt-2">
+                İş süreçlerinizi kolaylaştıracak, verimliliğinizi artıracak web
+                yazılımları tasarlayarak ihtiyacınıza uygun çözümler sunuyorum.
+              </p>
+            </div>
+            <a class="services-link" href="#portfolio">
+              Detaylar ve Örnekler
+              <i class="ph ph-arrow-right text-xl ps-2 pb-0.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="min-h-screen px-4 pb-20" id="portfolio">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 max-w-7xl mx-auto"
+      >
+        <div class="hover-trigger">
+          <a href="/tr/project/expressmenu" class="block group">
+            <div
+              class="overflow-hidden group bg-white p-2 mb-6 aspect-4/5 relative shadow-md hover:shadow-xl transition-all"
+            >
+              <div
+                class="absolute inset-0 gap-4 bg-white flex flex-col items-center justify-center px-6 lg:px-8 pointer-events-none rotate-y-180 group-hover:rotate-y-0 opacity-0 group-hover:opacity-90 transition-all duration-1000"
+              >
+                <strong class="w-full display-font text-3xl"
+                  >ExpressMenu</strong
+                >
+                <br />
+                <div class="w-full text-2xl">
+                  Restoran/kafeler için QR kodlu menü oluşturma ve düzenleme
+                  yazılımı.
+                </div>
+              </div>
+              <img
+                src="../storage/projects/IEI8NPnIyOvsmR6dqUG5cC0a7lAqY8EY307gWf6U.png"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:rotate-y-180 group-hover:opacity-10"
+              />
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"
+              ></div>
+            </div>
+            <h2
+              class="display-font text-4xl font-bold mb-2 uppercase max-w-[95%]"
+            >
+              ExpressMenu
+            </h2>
+            <p
+              class="text-gray-500 text-sm uppercase tracking-widest font-medium"
+            >
+              Fullstack
+            </p>
+          </a>
+        </div>
+        <div class="hover-trigger pt-0 md:pt-24">
+          <a href="/tr/project/vardiyaio" class="block group">
+            <div
+              class="overflow-hidden group bg-white p-2 mb-6 aspect-4/5 relative shadow-md hover:shadow-xl transition-all"
+            >
+              <div
+                class="absolute inset-0 gap-4 bg-white flex flex-col items-center justify-center px-6 lg:px-8 pointer-events-none rotate-y-180 group-hover:rotate-y-0 opacity-0 group-hover:opacity-90 transition-all duration-1000"
+              >
+                <strong class="w-full display-font text-3xl">Vardiya.io</strong>
+                <br />
+                <div class="w-full text-2xl">
+                  Çalışan görevlendirme sistemi ve kişisel ajanda web uygulaması
+                </div>
+              </div>
+              <img
+                src="../storage/projects/WDYSg3nuD3H03KvBkvUp2AZ65VxtmGieharkKYM1.png"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:rotate-y-180 group-hover:opacity-10"
+              />
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"
+              ></div>
+            </div>
+            <h2
+              class="display-font text-4xl font-bold mb-2 uppercase max-w-[95%]"
+            >
+              Vardiya.io
+            </h2>
+            <p
+              class="text-gray-500 text-sm uppercase tracking-widest font-medium"
+            >
+              Fullstack
+            </p>
+          </a>
+        </div>
+        <div class="hover-trigger">
+          <a href="/tr/project/kalmio" class="block group">
+            <div
+              class="overflow-hidden group bg-white p-2 mb-6 aspect-4/5 relative shadow-md hover:shadow-xl transition-all"
+            >
+              <div
+                class="absolute inset-0 gap-4 bg-white flex flex-col items-center justify-center px-6 lg:px-8 pointer-events-none rotate-y-180 group-hover:rotate-y-0 opacity-0 group-hover:opacity-90 transition-all duration-1000"
+              >
+                <strong class="w-full display-font text-3xl">Kalmio</strong>
+                <br />
+                <div class="w-full text-2xl">
+                  Ziyaretçilerin yemekleri ve restoranları, kategori ve mesafeye
+                  göre sıralayıp online olarak satın alabilecekleri bir sistem.
+                </div>
+              </div>
+              <img
+                src="../storage/projects/kwew9KYvyuY4rgChC8FCJrSiyb9Yw6kr8PFMIbu5.png"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:rotate-y-180 group-hover:opacity-10"
+              />
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"
+              ></div>
+            </div>
+            <h2
+              class="display-font text-4xl font-bold mb-2 uppercase max-w-[95%]"
+            >
+              Kalmio
+            </h2>
+            <p
+              class="text-gray-500 text-sm uppercase tracking-widest font-medium"
+            >
+              Fullstack
+            </p>
+          </a>
+        </div>
+        <div class="hover-trigger pt-0 md:pt-24">
+          <a href="/tr/project/storefront" class="block group">
+            <div
+              class="overflow-hidden group bg-white p-2 mb-6 aspect-4/5 relative shadow-md hover:shadow-xl transition-all"
+            >
+              <div
+                class="absolute inset-0 gap-4 bg-white flex flex-col items-center justify-center px-6 lg:px-8 pointer-events-none rotate-y-180 group-hover:rotate-y-0 opacity-0 group-hover:opacity-90 transition-all duration-1000"
+              >
+                <strong class="w-full display-font text-3xl">StoreFront</strong>
+                <br />
+                <div class="w-full text-2xl">
+                  Fiziksel mağazalar için envanter yönetimi ve çalışan
+                  performans takip yazılımı
+                </div>
+              </div>
+              <img
+                src="../storage/projects/NJzmw0ThlDzPZFn6LrEjZhxwnJZx5W5XyGUzLOrq.png"
+                class="w-full h-full object-cover transition duration-700 ease-out group-hover:rotate-y-180 group-hover:opacity-10"
+              />
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition"
+              ></div>
+            </div>
+            <h2
+              class="display-font text-4xl font-bold mb-2 uppercase max-w-[95%]"
+            >
+              StoreFront
+            </h2>
+            <p
+              class="text-gray-500 text-sm uppercase tracking-widest font-medium"
+            >
+              Fullstack
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-20 border-t border-gray-300">
+      <div class="container mx-auto px-4 text-center">
+        <a
+          href="/tr/contact"
+          class="display-font uppercase block text-6xl md:text-8xl font-bold mb-12 hover:text-gray-500 transition cursor-pointer"
+        >
+          İletişim
+        </a>
+
+        <div
+          class="flex justify-center gap-12 text-sm uppercase tracking-widest font-bold"
+        >
+          <a
+            href="https://github.com/devKemal"
+            target="_blank"
+            class="hover:line-through"
+            >Github</a
+          ><a
+            href="https://www.behance.net/kemalozvarol"
+            target="_blank"
+            class="hover:line-through"
+            >Behance</a
+          >
+          <a href="mailto:devkemal.contact@gmail.com" class="hover:line-through"
+            >Email</a
+          >
+        </div>
+
+        <div class="mt-20 text-xs text-gray-500 font-medium">
+          &copy; 2026 Alornix Canvas.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("-translate-y-full");
+        window.logo.classList.toggle("text-white");
+        window.menu_burger.classList.toggle("text-white");
+      }
+      console.log(navigator.language);
+
+      // if (window.location.pathname === '/') {
+      //     const lang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+      //     window.location.href = '/' + lang + '/';
+      // }
+    </script>
+  </body>
+</html>
